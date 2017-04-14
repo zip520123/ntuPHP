@@ -7,6 +7,102 @@
     <title>Document</title>
 </head>
 <body>
-    aaa
+    <!--center>table[border=2 width=80%]>tr*18>td{$}*2-->
+
+    <center>
+       <form action="deal.php" method="post">
+            
+       
+        <table border="2" width="80%">
+            <tr>
+                <td colspan =2 bgcolor="gray"><center><font size="+3">餐點內容</font></center></td>
+            </tr>
+            <tr>
+                <td rowspan="5" width="20%">丼飯類：</td>
+                <td><input type="checkbox" name="dinner[]" id="" value="親子丼">親子丼
+                    <input type="radio" name="bundle0" value="套餐"checked>套餐
+                    <input type="radio" name="bundle0" value="單點" >單點
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="dinner[]" id="" value="牛丼">牛丼
+                <input type="radio" name="bundle1" value="套餐"checked>套餐
+                    <input type="radio" name="bundle1" value="單點" >單點</td>
+                
+            </tr>
+            <tr>
+                
+                <td><input type="checkbox" name="dinner[]" id="" value="天丼">天丼
+                <input type="radio" name="bundle2" value="套餐"checked>套餐
+                    <input type="radio" name="bundle2" value="單點" >單點</td>
+            </tr>
+            <tr>
+                
+                <td><input type="checkbox" name="dinner[]" id="" value="咖哩飯">咖哩飯
+                <input type="radio" name="bundle3" value="套餐"checked>套餐
+                    <input type="radio" name="bundle3" value="單點" >單點</td>
+            </tr>
+            <tr>
+                
+                <td><input type="checkbox" name="dinner[]" id="" value="鰻魚飯">鰻魚飯
+                <input type="radio" name="bundle4" value="套餐"checked>套餐
+                    <input type="radio" name="bundle4" value="單點" >單點</td>
+            </tr>
+            <tr>
+                <td rowspan="3">麵食：</td>
+                <td><input type="checkbox" name="dinner[]" id="" value="炒烏龍麵">炒烏龍麵
+                <input type="radio" name="bundle5" value="套餐"checked>套餐
+                    <input type="radio" name="bundle5" value="單點" >單點</td>
+            </tr>
+            <tr>
+               
+                <td><input type="checkbox" name="dinner[]" id="" value="味增拉麵">味增拉麵
+                <input type="radio" name="bundle6" value="套餐"checked>套餐
+                    <input type="radio" name="bundle6" value="單點" >單點</td>
+            </tr>
+            <tr>
+                
+                <td><input type="checkbox" name="dinner[]" id="" value="屯骨拉麵">屯骨拉麵
+                <input type="radio" name="bundle7" value="套餐"checked>套餐
+                    <input type="radio" name="bundle7" value="單點" >單點</td>
+            </tr>
+            <tr>
+                <td rowspan="3">甜點：</td>
+                
+                <td><input type="checkbox" name="dinner[]" id="" value="抹茶冰淇淋">抹茶冰淇淋
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="dinner[]" id="" value="烤布蕾">烤布雷
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="dinner[]" id="" value="巧克力聖代">巧克力聖代
+            </tr>
+            <tr>
+                <td colspan =2 bgcolor="gray"><center><font size="+3">顧客資訊</font></center></td>
+                
+            </tr>
+            <tr>
+                <td>桌號：</td>
+                <td><textarea rows="1" cols="5"></textarea>號桌</td>
+            </tr>
+            <tr>
+                <td>人數：</td>
+                <td><textarea rows="1" cols="5"></textarea>個人</td>
+            </tr>
+            <tr>
+                <td>服務生：</td>
+                <td><textarea rows="1" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>其他註記：</td>
+                <td><textarea rows="5" cols="80"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan =2 bgcolor="gray"><center><button type="submit" >填完送出</button></center></td>
+                
+            </tr>
+        </table>
+         </form>
+    </center>
 </body>
 </html>
