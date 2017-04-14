@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="deal.php" method="post">
+        <p>
+            <input type="text" name="id" placeholder="請輸入帳號!" value="3345678">
+        </p>
+        <!--input[type="password" name="pwd" placeholder="請輸入密碼"]-->
+        <p>
+            <input type="password" name="pwd" placeholder="請輸入密碼" value="3345678">
+        </p>
+
+        <p>
+            <input type="hidden" name="birthdate" value="3345678">
+        </p>
+
+        <textarea name="message" rows="5" cols="7"></textarea>
+
+
+        <!--input:checkbox[name]{籃球}-->
+        <input type="checkbox" name="sport[]" value="basketball">籃球
+        <input type="checkbox" name="sport[]" value="baseball">棒球
+        <input type="checkbox" name="sport[]" value="swim">游泳
+        <input type="checkbox" name="sport[]"  value="tabletennis">桌球
+
+        <!--input:r[name="gender" value="man"]{男}*2-->
+        <input type="radio" name="gender" value="man">男
+        <input type="radio" name="gender" value="woman" checked>女
+
+
+        <p>
+            <select name="blood">
+                <option value="A">A 型血</option>
+                <option value="B">B 型血</option>
+                <option value="AB" selected>AB 型血</option>
+                <option value="O">O 型血</option>
+            </select>
+        </p>
+
+        <p>
+            今天晚上要吃啥?
+            <select name="dinner[]" multiple>
+                <option value="1">拉麵</option>
+                <option value="2">臭豆腐</option>
+                <option value="3">咖哩飯</option>
+                <option value="4">披薩</option>
+                <option value="5">漢堡</option>
+            </select>
+        </p>
+
+        <input type="submit" value="送出!!!">
+
+        <button type="submit">送出!!!</button>
+
+        請選擇日期:<input type="date" name="pickDate">
+
+        <!--btn:s{send !!!}-->
+        <button type="submit">send !!!</button>
+    </form>
+
+</body>
+</html>

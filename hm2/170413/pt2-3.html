@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>用餐滿意度</h1>
+    
+    <hr>
+    <form action="deal.php" method="post">
+        <!--input[name placeholder]-->
+        <p><input type="text" name="username" placeholder="請輸入性名"></p>
+        <p>今日主食:
+            <input type="checkbox" name="main[]" value="mean">牛小排
+            <input type="checkbox" name="main[]" value="fish">鮭魚排
+            <input type="checkbox" name="main[]" value="pias">義大利麵
+            <input type="checkbox" name="main[]" value="pizza">披薩
+        </p>
+        <p>
+            滿意度:
+            <input type="radio" name="like" value="good">很好
+            <input type="radio" name="like" value="soso">普通
+            <input type="radio" name="like" value="bad">差
+        </p>
+        <p>
+            <textarea rows="10" cols="10" name="message"></textarea>
+        </p>
+
+        <hr>
+
+        <button type="submit">送出</button>
+
+    </form>
+
+    </center>
+</body>
+</html>
