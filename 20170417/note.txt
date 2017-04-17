@@ -1,0 +1,3 @@
+
+更改vs快捷建功能
+$$$\resources\app\node_modules\emmet\lib\snippets.json
