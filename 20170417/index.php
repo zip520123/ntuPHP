@@ -9,7 +9,8 @@
 <body>
     <?php
         $hello = "中文顯示";
-        echo $hello;
+        echo "$hello<center>治中</center>";
+        
     ?>
 </body>
 </html>
