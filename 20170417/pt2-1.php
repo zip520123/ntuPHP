@@ -8,13 +8,9 @@
 </head>
 <body>
     <?php 
-         $openTags = "<center>";
-        $closeTags = "</center>";
-
-        $name = "路大有";
-        $score = 95;
-
-        echo $openTags.$name."得了".$score."分".$closeTags;
+        $hello = "大家好";
+        echo $hello;
+    
     ?>
 </body>
 </html>

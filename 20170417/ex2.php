@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-         $openTags = "<center>";
-        $closeTags = "</center>";
-
-        $name = "路大有";
-        $score = 95;
-
-        echo $openTags.$name."得了".$score."分".$closeTags;
+    <?php
+        echo "想要說聲'hi'!!";
+        echo '想要說聲\'hi\'!!';
     ?>
 </body>
 </html>
