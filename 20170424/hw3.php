@@ -13,7 +13,7 @@
         print_r($_POST);
         $dict = ["apple"=>"蘋果","orange"=>"橘子","watermelon"=>"西瓜","strawberry"=>"草莓","pineapple"=>"鳳梨"];
         $input = $_POST["input"];
-// ($_POST['sport'])
+
         echo "$input"." ".$dict[$input];
         foreach ($dict as $key => $value) {
             echo "<br>$key , $value";
