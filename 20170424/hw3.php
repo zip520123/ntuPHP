@@ -10,13 +10,14 @@
     
     
         <?php
-        print_r($_POST);
+        // print_r($_POST);
+        //var_dump($_POST);
         $dict = ["apple"=>"蘋果","orange"=>"橘子","watermelon"=>"西瓜","strawberry"=>"草莓","pineapple"=>"鳳梨"];
         $input = $_POST["input"];
 
-        echo "$input"." ".$dict[$input];
+        // echo "$input"." ".$dict[$input];
         foreach ($dict as $key => $value) {
-            echo "<br>$key , $value";
+            
             if ($key == $input) {
                 echo '<table border="1">';
                 echo "<tr><td>英文</td><td>中文</td></tr>";
@@ -25,7 +26,7 @@
                 exit;
             }
         }
-        echo "水果字典中沒有$input";
+        echo "水果字典中沒有<font color=red>$input</font>這個單字";
     ?>
 
     </table>
