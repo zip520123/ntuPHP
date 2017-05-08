@@ -1,0 +1,63 @@
+INSERT INTO `bookstore`.`books` (`booksNo`, `booksName`, `booksAuthor`, `booksPrice`, `booksPages`, `booksPublish`) 
+VALUES ('vvva', 'php24', 'nuknow', '700', '200', '2017-05-08');
+insert into books (booksNo , booksName ,booksAuthor , booksPrice ,booksPages , booksPublish)
+values ('T9870','phpMysql 24堂課','李白', 770 ,1231,'2017-01-03'),
+values ('T9870','phpMysql 24堂課','李白', 770 ,1231,'2017-01-03'),
+values ('T9870','phpMysql 24堂課','李白', 770 ,1231,'2017-01-03'),
+values ('T9870','phpMysql 24堂課','李白', 770 ,1231,'2017-01-03'),
+values ('T9870','phpMysql 24堂課','李白', 770 ,1231,'2017-01-03');
+
+update books
+set booksAuthor = '杜甫',
+    booksPrice = 1000
+where booksAuthor = '李白'
+
+delete from books
+where booksName = 'phpMysql 24堂課'
+
+select *
+from books
+where booksPages >= 400 and booksPages <= 800
+
+select *
+from books
+where booksPublish >= '2017-01-01'
+
+select *
+from books
+where booksPages >= 400 and booksPages <= 800;
+
+
+select *
+from books
+where booksPages between 400 and 800;
+
+select * 
+from books
+where booksPublish >= '2011-01-01'
+
+select * 
+from books
+where booksName like '天%' or booksAuthor = 'Frank'
+
+select booksName , booksPrice , booksPages / booksPrice as 'cost'
+from books
+where booksName like '天%' or booksAuthor = 'Frank'
+
+select count(*) as 'count'
+from books 
+
+select *
+from orders , books
+select *
+from orders , books
+where orders.ordersBook = books.booksNo
+
+select *
+from orders , books , customers
+where orders.ordersBook = books.booksNo and orders.ordersCustomer = customers.customersNo
+
+select books.booksName , customers.customersNo
+from orders , books , customers
+where orders.ordersBook = books.booksNo and orders.ordersCustomer = customers.customersNo
+
