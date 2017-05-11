@@ -1,4 +1,4 @@
-﻿# Host: localhost  (Version: 5.5.5-10.1.19-MariaDB)
+﻿#ost: localhost  (Version: 5.5.5-10.1.19-MariaDB)
 # Date: 2017-02-20 14:40:39
 # Generator: MySQL-Front 5.3  (Build 4.271)
 

@@ -1,8 +1,8 @@
 <?php
+
     if (!$_COOKIE['login'] )
         header('Location:login.html');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

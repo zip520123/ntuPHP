@@ -2,9 +2,9 @@
 
 define('dbhost','localhost');
 define('username','root');
-define('password','student');
+define('password','root');
 define('dbname','fifa');
 
-define('dsn', 'mysql:host='.dbhost.';dbname='.dbname.';charset=utf8');
+define('dsn', 'mysql:host='.dbhost.';dbname='.dbname.';port=3307;charset=utf8');
 
 ?>
