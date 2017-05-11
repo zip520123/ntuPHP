@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style/bootstrap.css">
+    <link rel="stylesheet" href="dist/style/main.css">
+</head>
+
+<body ng-app="fifaApp" class="landing">
+    <div class="top-bar row" ng-controller="MainCtrl as mainCtrl">
+        <div class="col-xs-5">
+            <span><a href="#/">FIFA TEAMS</a></span>
+        </div>
+        <div class="col-xs-2" align="center">
+            <span><a href="#/register">register</a></span>
+        </div>
+        <div class="col-xs-5" align="right">
+            <span ng-hide="mainCtrl.userService.isLoggedIn">
+                <a href="#/login">Login</a>
+            </span>
+            <span ng-show="mainCtrl.userService.isLoggedIn">
+                <a ng-click="mainCtrl.logout()">Logout</a>
+            </span>
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+    <script src="./dist/script/vendors/jquery-1.11.1.js"></script>
+    <script src="./dist/script/vendors/angular.js"></script>
+    <script src="./dist/script/vendors/angular-route.js"></script>
+
+    <script src="./dist/script/app.js"></script>
+    <script src="./dist/script/services.js"></script>
+    <script src="./dist/script/directive.js"></script>
+    <script src="./dist/script/controllers.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<div class="login-container" ng-controller="LoginCtrl as loginCtrl">
+    <div class="alert alert-danger" ng-bind="loginCtrl.errorMessage" ng-show="loginCtrl.errorMessage">
+
+    </div>
+    <div class="card login-card">
+        <div class="login-form">
+            <form class="form-horizontal" name="loginForm" ng-submit="loginCtrl.login()" role="form">
+                <div class="form-group">
+                    <label for="email">Username</label>
+                    <input type="text" class="form-control" id="email" ng-model="loginCtrl.user.username" placeholder="Enter Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" ng-model="loginCtrl.user.password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-lg" ng-disabled="loginForm.$invalid">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

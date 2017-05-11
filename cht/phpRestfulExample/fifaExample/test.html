@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body ng-app="fifaApp">
+
+    <div ng-controller="mainCtrl"></div>
+
+    <script src="./dist/script/vendors/angular.js"></script>
+    <script>
+        angular.module('fifaApp', []).factory('testError', ['$http', function ($http) {
+                return {
+                    getData: function () {
+                        $http.get('/phpAPI/test.php').then(function (response) {
+                            console.log(response);
+                        }, function (error) {
+                            console.log("error happen");
+                            console.log(error);
+                        })
+                    }
+                }
+            }])
+            .controller('mainCtrl', ['testError', function (testError) {
+                var self = this;
+                self.testError = testError;
+                self.testError.getData();
+            }]);
+    </script>
+</body>
+
+</html>

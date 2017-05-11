@@ -1,0 +1,33 @@
+<div class="login-container">
+    <div class="alert alert-danger" ng-bind="registerCtrl.errorMessage" ng-show="registerCtrl.errorMessage">
+
+    </div>
+    <div class="card login-card">
+        <div class="login-form">
+            <form class="form-horizontal" name="registerForm" ng-submit="registerCtrl.register()" role="form">
+                <div class="form-group">
+                    <label for="email">Account</label>
+                    <input type="text" class="form-control" id="email" ng-model="registerCtrl.userInfo.userId" placeholder="Enter your login Id"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" ng-model="registerCtrl.userInfo.userPwd" placeholder="Enter password"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="repassword">Password Again</label>
+                    <input type="password" class="form-control" id="repassword" ng-model="registerCtrl.userInfo.userPwdAgain" placeholder="Enter password again"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input type="text" class="form-control" id="username" ng-model="registerCtrl.userInfo.userName" placeholder="Enter your name"
+                        required>
+                </div>
+                <div ng-show="registerForm.repassword.$error.passwordCompare">password not same</div>
+                <button type="submit" class="btn btn-success btn-lg" ng-disabled="registerForm.$invalid">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
